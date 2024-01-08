@@ -12,7 +12,6 @@ binder.bind(globals())
 from learntools.intro_to_programming.ex1 import *
 print('Setup complete.')
 Setup complete.
-add Codeadd Markdown
 The code above sets up the notebook so that it can check your answers in this exercise. You should never modify this code. (Otherwise, the notebook won't be able to verify that you have successfully completed the exercise.)
 
 After finishing all of the questions below, you'll see the exercise marked as complete on the course page. Once you complete all of the lessons, you'll get a course completion certificate!

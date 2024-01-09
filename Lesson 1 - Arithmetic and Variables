@@ -16,6 +16,7 @@ The code above sets up the notebook so that it can check your answers in this ex
 
 After finishing all of the questions below, you'll see the exercise marked as complete on the course page. Once you complete all of the lessons, you'll get a course completion certificate!
 
+****************
 Question 1
 Next, you will run some code from the tutorial, so you can see how it works for yourself. Run the next code cell without changes.
 
@@ -31,7 +32,9 @@ My name is James.
 You just ran code to print Hello world!, which you should see in the output above.
 
 The second line of code (q1.check()) checks your answer. You should never modify this checking code; if you remove it, you won't get credit for completing the problem.
+****************
 
+****************
 Question 2
 Now, you will print another message of your choosing. To do this, change print("Your message here!") to use a different message. For instance, you might like to change it to something like:
 
@@ -50,7 +53,9 @@ print("Good morning!")
 q2.check()
 Good morning!
 Once you have printed your own message, you're ready to move on to the next question.
+****************
 
+****************
 Question 3
 As you learned in the tutorial, a comment in Python has a pound sign (#) in front of it, which tells Python to ignore the text after it.
 
@@ -80,7 +85,9 @@ Solution: If you're still stuck on a question after viewing the hint and re-read
 Once you have printed the hint and the solution, you're ready to move on to the next question.
 
 In the next question, and in most of the exercises in this course, you will have the option to uncomment to view hints and solutions. Once you feel comfortable with uncommenting, continue to the next question.
+****************
 
+****************
 Question 4
 In the tutorial, you defined several variables to calculate the total number of seconds in a year. Run the next code cell to do the calculation here.
 
@@ -112,7 +119,6 @@ births_per_day = births_per_min * 60 * 24
 q4.check()
 Correct
 
-add Codeadd Markdown
 # Uncomment to get a hint
 q4.hint()
 ​
@@ -127,7 +133,9 @@ births_per_min = 250
 
 # Set the value of the births_per_day variable
 births_per_day = births_per_min * mins_per_hour * hours_per_day
-add Codeadd Markdown
+****************
+
+****************
 🌶️ Question 5
 (Questions marked with a 🌶️ will be a little bit more challenging than the others! Remember you can always get a hint or view the solution.)
 
@@ -172,7 +180,7 @@ print(minors)
 891
 342
 113
-add Codeadd Markdown
+
 So,
 
 total = 891 (there were 891 passengers on board the Titanic),
@@ -225,3 +233,4 @@ minors_fraction = minors/total
 
 # Print the value of the minors_fraction variable
 print(minors_fraction)
+****************

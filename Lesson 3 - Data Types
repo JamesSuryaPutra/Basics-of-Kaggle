@@ -7,7 +7,8 @@ binder.bind(globals())
 from learntools.intro_to_programming.ex3 import *
 print('Setup complete.')
 Setup complete.
-add Codeadd Markdown
+
+****************
 Question 1
 You have seen how to convert a float to an integer with the int function. Try this out yourself by running the code cell below.
 
@@ -46,7 +47,9 @@ q1.check()
 Correct:
 
 Negative floats are always rounded UP to the closest integer (for instance, both -1.1 and -1.9 are rounded up to -1). Positive floats are always rounded DOWN to the closest integer (for instance, 2.1 and 2.9 are rounded down to 2).
+****************
 
+****************
 Question 2
 In the tutorial, you learned about booleans (which can take a value of True or False), in addition to integers, floats, and strings. For this question, your goal is to determine what happens when you multiply a boolean by any of these data types. Specifically,
 
@@ -70,7 +73,9 @@ q2.check()
 Correct:
 
 When you multiple an integer or float by a boolean with value True, it just returns that same integer or float (and is equivalent to multiplying by 1). If you multiply an integer or float by a boolean with value False, it always returns 0. This is true for both positive and negative numbers. If you multiply a string by a boolean with value True, it just returns that same string. And if you multiply a string by a boolean with value False, it returns an empty string (or a string with length zero).
+****************
 
+****************
 Question 3
 In this question, you will build off your work from the previous exercise to write a function that estimates the value of a house.
 
@@ -111,7 +116,9 @@ Solution:
 def get_expected_cost(beds, baths, has_basement):
     value = 80000 + 30000 * beds + 10000 * baths + 40000 * has_basement
     return value
-add Codeadd Markdown
+****************
+
+****************
 Question 4
 We'll continue our study of boolean arithmetic. For this question, your task is to provide a description of what happpens when you add booleans.
 
@@ -134,7 +141,9 @@ q4.check()
 Correct:
 
 When you add booleans, adding False is equivalent to adding 0, and adding True is equivalent to adding 1.
+****************
 
+****************
 🌶️ Question 5
 You own an online shop where you sell rings with custom engravings. You offer both gold plated and solid gold rings.
 
@@ -179,3 +188,4 @@ Use the next code cell to calculate the cost of engraving 08/10/2000 on a gold p
 project_two = cost_of_project("08/10/2000", False)
 print(project_two)
 120
+****************

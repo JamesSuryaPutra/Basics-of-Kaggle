@@ -8,6 +8,7 @@ binder.bind(globals())
 from learntools.intro_to_programming.ex2 import *
 print('Setup complete.')
 
+****************
 Question 1
 In the House Prices - Advanced Regression Techniques competition, you need to use information like the number of bedrooms and bathrooms to predict the price of a house. Inspired by this competition, you'll write your own function to do this.
 
@@ -46,6 +47,9 @@ Solution:
 def get_expected_cost(beds, baths):
     value = 80000 + 30000 * beds + 10000 * baths
     return value
+****************
+
+****************
 Question 2
 You are thinking about buying a home and want to get an idea of how much you will spend, based on the number of bedrooms and bathrooms. You are trying to decide between four different options:
 
@@ -88,6 +92,9 @@ option_one = get_expected_cost(2, 3)
 option_two = get_expected_cost(3, 2)
 option_three = get_expected_cost(3, 3)
 option_four = get_expected_cost(3, 4)
+****************
+
+****************
 Question 3
 You're a home decorator, and you'd like to use Python to streamline some of your work. Specifically, you're creating a tool that you intend to use to calculate the cost of painting a room.
 
@@ -125,6 +132,9 @@ def get_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon):
     gallons_needed = total_sqft / sqft_per_gallon
     cost = cost_per_gallon * gallons_needed
     return cost
+****************
+
+****************
 Question 4
 Use the get_cost() function you defined in Question 3 to calculate the cost of applying one coat of paint to a room with:
 
@@ -151,6 +161,9 @@ Solution:
 
 # Set the project_cost variable to the cost of the project
 project_cost = get_cost(432, 144, 400, 15) 
+****************
+
+****************
 🌶️ Question 5
 Now say you can no longer buy fractions of a gallon. (For instance, if you need 4.3 gallons to do a project, then you have to buy 5 gallons of paint.)
 
@@ -208,3 +221,4 @@ Say you're working with a slightly larger room. Run the next code cell to calcul
 
 get_actual_cost(594, 288, 400, 15) 
 45
+****************

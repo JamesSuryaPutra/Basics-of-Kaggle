@@ -7,6 +7,7 @@ from learntools.intro_to_programming.ex4 import *
 print('Setup complete.')
 Setup complete.
 
+****************
 Question 1
 You work at a college admissions office. When inspecting a dataset of college applicants, you notice that some students have represented their grades with letters ("A", "B", "C", "D", "F"), whereas others have represented their grades with a number between 0 and 100.
 
@@ -70,7 +71,9 @@ def get_grade(score):
     else:
         grade = "F"
     return grade
+****************
 
+****************
 Question 2
 In the exercise for the previous lesson, you wrote a function cost_of_project() that estimated the price of rings for an online shop that sells rings with custom engravings. This function did not use conditional statements. In this exercise, you will rewrite the function to use conditional statements. Recall that the online shop has the following price structure:
 
@@ -123,7 +126,9 @@ def cost_of_project(engraving, solid_gold):
     else:
         cost = 50 + 7 * len(engraving)
     return cost
+****************
 
+****************
 Question 3
 You are a programmer at a water agency. Recently, you have been tasked to write a function get_water_bill() that takes as input:
 
@@ -190,7 +195,9 @@ def get_water_bill(num_gallons):
     else:
         bill = 10 * num_gallons / 1000
     return bill
+****************
 
+****************
 Question 4
 You work for a company that provides data services. For $100/month, your company provides 15 gigabytes (GB) of data. Then, any additional data is billed at $0.10/MB (or $100/GB, since 1,000 MB are in 1 GB).
 
@@ -240,7 +247,9 @@ def get_phone_bill(gb):
     else:
         bill = 100 + (gb - 15) * 100
     return bill
+****************
 
+****************
 🌶️ Question 5
 In Mexico, foods and beverages that are high in saturated fat, trans fat, sugar, sodium, and/or calories appear with warning labels that are designed to help consumers make healthy food choices.
 
@@ -303,7 +312,6 @@ In the next code cell, fill in the values for this cereal. Here is an image with
 
 Note: running the line of code below as-is will return an error. You have to fill in the nutritional values first.
 
-16
 # zucaritas cereal https://world.openfoodfacts.org/product/7501008023624/zucaritas-kellogg-s
 # TODO: Uncomment the line below, fill in the values, and run the function
 get_labels("solid", 40, 150, 0, 0, 150, 16)
@@ -313,7 +321,6 @@ EXCESO CALORÍAS / EXCESS CALORIES
 
 Next, try these mozzarella sticks. Here is an image with all of the nutritional information.
 
-208, 0
 # mozzarella sticks https://world-es.openfoodfacts.org/producto/0062325540104/mozzarella-cheese-sticks
 # TODO: Uncomment the line below, fill in the values, and run the function
 get_labels("solid", 21, 68, 3, 0.2, 208, 0)
@@ -328,7 +335,6 @@ try these cookies. Here is an image with all of the nutritional information.
 try this soda. Here is an image with all of the nutritional information.
 Use the two code cells below for this.
 
-110, 9
 # pillsbury cookies https://world.openfoodfacts.org/product/0069700118545/biscuits-au-sucre-pretraches
 # TODO: Uncomment the line below, fill in the values, and run the function
 get_labels("solid", 30, 120, 1.5, 0.1, 110, 9)
@@ -346,3 +352,4 @@ Once you have finished investigating the food items in this question, run the fi
 # Get credit for completing the problem
 q5.check()
 Once you have determined the labels for all of the food items, you're ready to move on to the next lesson!
+****************

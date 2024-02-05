@@ -1,17 +1,20 @@
-Set up the notebook
+<Set up the notebook>
 Run the next code cell without changes to set up the notebook.
 
+****************
 # Set up the exercise
 from learntools.core import binder
 binder.bind(globals())
 from learntools.intro_to_programming.ex3 import *
 print('Setup complete.')
-Setup complete.
 
+Setup complete.
 ****************
-Question 1
+
+<Question 1>
 You have seen how to convert a float to an integer with the int function. Try this out yourself by running the code cell below.
 
+****************
 # Define a float
 y = 1.
 print(y)
@@ -21,87 +24,104 @@ print(type(y))
 z = int(y)
 print(z)
 print(type(z))
+
 1.0
 <class 'float'>
 1
 <class 'int'>
-In this case, the float you are using has no numbers after the decimal.
+****************
 
-But what happens when you try to convert a float with a fractional part to an integer?
-How does the outcome of the int function change for positive and negative numbers?
+In this case, the float you are using has no numbers after the decimal. But what happens when you try to convert a float with a fractional part to an integer? How does the outcome of
+the int function change for positive and negative numbers?
+
 Use the next code cell to investigate and answer these questions. Feel free to add or remove any lines of code -- it is your workspace!
 
+****************
 # Uncomment and run this code to get started!
 print(int(1.2321))
 print(int(1.747))
 print(int(-3.94535))
 print(int(-2.19774))
+
 1
 1
 -3
 -2
+****************
+
 Once you have an answer, run the code cell below to see the solution. Viewing the solution will give you credit for answering the problem.
 
+****************
 # Check your answer (Run this code cell to receive credit!)
 q1.check()
+
 Correct:
-
-Negative floats are always rounded UP to the closest integer (for instance, both -1.1 and -1.9 are rounded up to -1). Positive floats are always rounded DOWN to the closest integer (for instance, 2.1 and 2.9 are rounded down to 2).
+Negative floats are always rounded UP to the closest integer (for instance, both -1.1 and -1.9 are rounded up to -1). Positive floats are always rounded DOWN to the closest integer
+(for instance, 2.1 and 2.9 are rounded down to 2).
 ****************
 
-****************
-Question 2
-In the tutorial, you learned about booleans (which can take a value of True or False), in addition to integers, floats, and strings. For this question, your goal is to determine what happens when you multiply a boolean by any of these data types. Specifically,
+<Question 2>
+In the tutorial, you learned about booleans (which can take a value of True or False), in addition to integers, floats, and strings. For this question, your goal is to determine what
+happens when you multiply a boolean by any of these data types. Specifically,
+1} What happens when you multiply an integer or float by True? What happens when you multiply them by False? How does the answer change if the numbers are positive or negative?
+2} What happens when you multiply a string by True? By False?
 
-What happens when you multiply an integer or float by True? What happens when you multiply them by False? How does the answer change if the numbers are positive or negative?
-What happens when you multiply a string by True? By False?
 Use the next code cell for your investigation.
 
+****************
 # Uncomment and run this code to get started!
 print(3 * True)
 print(-3.1 * True)
 print(type("abc" * False))
 print(len("abc" * False))
+
 3
 -3.1
 <class 'str'>
 0
+****************
+
 Once you have an answer, run the code cell below to see the solution. Viewing the solution will give you credit for answering the problem.
 
+****************
 # Check your answer (Run this code cell to receive credit!)
 q2.check()
+
 Correct:
-
-When you multiple an integer or float by a boolean with value True, it just returns that same integer or float (and is equivalent to multiplying by 1). If you multiply an integer or float by a boolean with value False, it always returns 0. This is true for both positive and negative numbers. If you multiply a string by a boolean with value True, it just returns that same string. And if you multiply a string by a boolean with value False, it returns an empty string (or a string with length zero).
+When you multiple an integer or float by a boolean with value True, it just returns that same integer or float (and is equivalent to multiplying by 1). If you multiply an integer or
+float by a boolean with value False, it always returns 0. This is true for both positive and negative numbers. If you multiply a string by a boolean with value True, it just returns
+that same string. And if you multiply a string by a boolean with value False, it returns an empty string (or a string with length zero).
 ****************
 
-****************
 Question 3
 In this question, you will build off your work from the previous exercise to write a function that estimates the value of a house.
 
 Use the next code cell to create a function get_expected_cost that takes as input three variables:
+1} beds - number of bedrooms (data type float)
+2} baths - number of bathrooms (data type float)
+3} has_basement - whether or not the house has a basement (data type boolean)
 
-beds - number of bedrooms (data type float)
-baths - number of bathrooms (data type float)
-has_basement - whether or not the house has a basement (data type boolean)
 It should return the expected cost of a house with those characteristics. Assume that:
+1} the expected cost for a house with 0 bedrooms and 0 bathrooms, and no basement is 80000,
+2} each bedroom adds 30000 to the expected cost,
+3} each bathroom adds 10000 to the expected cost, and
+4} a basement adds 40000 to the expected cost.
 
-the expected cost for a house with 0 bedrooms and 0 bathrooms, and no basement is 80000,
-each bedroom adds 30000 to the expected cost,
-each bathroom adds 10000 to the expected cost, and
-a basement adds 40000 to the expected cost.
 For instance,
+1} a house with 1 bedroom, 1 bathroom, and no basement has an expected cost of 80000 + 30000 + 10000 = 120000. This value will be calculated with get_expected_cost(1, 1, False).
+2} a house with 2 bedrooms, 1 bathroom, and a basement has an expected cost of 80000 + 2*30000 + 10000 + 40000 = 190000. This value will be calculated with get_expected_cost(2, 1, True).
 
-a house with 1 bedroom, 1 bathroom, and no basement has an expected cost of 80000 + 30000 + 10000 = 120000. This value will be calculated with get_expected_cost(1, 1, False).
-a house with 2 bedrooms, 1 bathroom, and a basement has an expected cost of 80000 + 2*30000 + 10000 + 40000 = 190000. This value will be calculated with get_expected_cost(2, 1, True).
 Remember you can always get a hint by uncommenting q3.hint() in the code cell following the next!
 
+****************
 # TODO: Complete the function
 def get_expected_cost(beds, baths, has_basement):
     value = 80000 + 30000 * beds + 10000 * baths + 40000 * has_basement
     return value
+
 # Check your answer
 q3.check()
+
 Correct
 
 # Uncomment to see a hint
@@ -109,59 +129,64 @@ q3.hint()
 ​
 # Uncomment to view the solution
 q3.solution()
-Hint: The variable has_basement is either True or False. What happens when you multiply it by 40000 (the value of a basement)? Refer to the previous question if you are unsure.
+
+Hint:
+The variable has_basement is either True or False. What happens when you multiply it by 40000 (the value of a basement)? Refer to the previous question if you are unsure.
 
 Solution:
-
 def get_expected_cost(beds, baths, has_basement):
     value = 80000 + 30000 * beds + 10000 * baths + 40000 * has_basement
     return value
 ****************
 
-****************
 Question 4
-We'll continue our study of boolean arithmetic. For this question, your task is to provide a description of what happpens when you add booleans.
+We'll continue our study of boolean arithmetic. For this question, your task is to provide a description of what happpens when you add booleans. Use the next code cell for your
+investigation. Feel free to add or remove any lines of code - use it as your workspace!
 
-Use the next code cell for your investigation. Feel free to add or remove any lines of code - use it as your workspace!
-
+****************
 print(False + False)
 print(True + False)
 print(False + True)
 print(True + True)
 print(False + True + True + True)
+
 0
 1
 1
 2
 3
+****************
+
 Once you have an answer, run the code cell below to see the solution. Viewing the solution will give you credit for answering the problem.
 
+****************
 # Check your answer (Run this code cell to receive credit!)
 q4.check()
-Correct:
 
+Correct:
 When you add booleans, adding False is equivalent to adding 0, and adding True is equivalent to adding 1.
 ****************
 
-****************
-🌶️ Question 5
+<Question 5>
 You own an online shop where you sell rings with custom engravings. You offer both gold plated and solid gold rings.
+1} Gold plated rings have a base cost of $50, and you charge $7 per engraved unit.
+2} Solid gold rings have a base cost of $100, and you charge $10 per engraved unit.
+3} Spaces and punctuation are counted as engraved units.
 
-Gold plated rings have a base cost of $50, and you charge $7 per engraved unit.
-Solid gold rings have a base cost of $100, and you charge $10 per engraved unit.
-Spaces and punctuation are counted as engraved units.
 Write a function cost_of_project() that takes two arguments:
+1} engraving - a Python string with the text of the engraving
+2} solid_gold - a Boolean that indicates whether the ring is solid gold
 
-engraving - a Python string with the text of the engraving
-solid_gold - a Boolean that indicates whether the ring is solid gold
 It should return the cost of the project. This question should be fairly challenging, and you may need a hint.
 
+****************
 def cost_of_project(engraving, solid_gold):
     cost = solid_gold * (100 + 10 * len(engraving)) + (not solid_gold) * (50 + 7 * len(engraving))
     return cost
 ​
 # Check your answer
 q5.check()
+
 Correct
 
 # Uncomment to see a hint
@@ -169,23 +194,35 @@ q5.hint()
 ​
 # Uncomment to view the solution
 q5.solution()
-Hint: There are two options - either the project uses solid gold or does not. With this in mind, you can structure your solution like this: cost = solid_gold * ____ + (not solid_gold) * ____. You need to figure out how to fill in the blanks. Also, remember that:
 
-If solid_gold = True, then (not solid_gold) = False, and if solid_gold = False, then (not solid_gold) = True.
-Multiplying an integer by True is equivalent to multiplying it by 1, and multiplying an integer by False is equivalent to multiplying it by 0.
+Hint:
+There are two options - either the project uses solid gold or does not. With this in mind, you can structure your solution like this:
+cost = solid_gold * ____ + (not solid_gold) * ____
+
+You need to figure out how to fill in the blanks. Also, remember that:
+1} If solid_gold = True, then (not solid_gold) = False, and if solid_gold = False, then (not solid_gold) = True.
+2} Multiplying an integer by True is equivalent to multiplying it by 1, and multiplying an integer by False is equivalent to multiplying it by 0.
+
 Solution:
-
 def cost_of_project(engraving, solid_gold):
     cost = solid_gold * (100 + 10 * len(engraving)) + (not solid_gold) * (50 + 7 * len(engraving))
     return cost
+****************
+
 Run the next code cell to calculate the cost of engraving Charlie+Denver on a solid gold ring.
 
+****************
 project_one = cost_of_project("Charlie+Denver", True)
 print(project_one)
+
 240
+****************
+
 Use the next code cell to calculate the cost of engraving 08/10/2000 on a gold plated ring.
 
+****************
 project_two = cost_of_project("08/10/2000", False)
 print(project_two)
+
 120
 ****************

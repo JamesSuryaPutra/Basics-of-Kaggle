@@ -1,10 +1,8 @@
 <Set up the notebook>
-To begin, run the code in the next cell.
+To begin, run the code in the next cell. Begin by clicking inside the code cell. Click on the triangle (in the shape of a "Play button") that appears to the left of the code cell.
 
-Begin by clicking inside the code cell.
-Click on the triangle (in the shape of a "Play button") that appears to the left of the code cell.
-If your code was run sucessfully, you will see Setup Complete as output below the cell.
-Instead of clicking on the triangle, you can also run code by pressing Shift + Enter on your keyboard. Try this now! Nothing bad will happen if you run the code more than once.
+If your code was run sucessfully, you will see Setup Complete as output below the cell. Instead of clicking on the triangle, you can also run code by pressing Shift + Enter on your key
+board. Try this now! Nothing bad will happen if you run the code more than once.
 
 ****************
 # Set up the exercise
@@ -16,8 +14,8 @@ print('Setup complete.')
 Setup complete.
 ****************
 
-The code above sets up the notebook so that it can check your answers in this exercise. You should never modify this code. (Otherwise, the notebook won't be able to verify that you have
-successfully completed the exercise.)
+The code above sets up the notebook so that it can check your answers in this exercise. You should never modify this code (otherwise the notebook won't be able to verify that you have
+successfully completed the exercise).
 
 After finishing all of the questions below, you'll see the exercise marked as complete on the course page. Once you complete all of the lessons, you'll get a course completion
 certificate!
@@ -42,9 +40,8 @@ print("My name is James.")
 My name is James.
 ****************
 
-You just ran code to print Hello world!, which you should see in the output above.
-
-The second line of code (q1.check()) checks your answer. You should never modify this checking code; if you remove it, you won't get credit for completing the problem.
+You just ran code to print Hello world!, which you should see in the output above. The second line of code (q1.check()) checks your answer. You should never modify this checking code;
+if you remove it, you won't get credit for completing the problem.
 
 <Question 2>
 Now, you will print another message of your choosing. To do this, change print("Your message here!") to use a different message. For instance, you might like to change it to something
@@ -120,13 +117,16 @@ secs_per_min = 60
 total_secs = secs_per_min * mins_per_hour * hours_per_day * days_per_year * num_years
 print(total_secs)
 126144000
-Use the next code cell to:
+****************
 
-Define a variable births_per_min and set it to 250. (There are on average 250 babies born each minute.)
-Define a variable births_per_day that contains the average number of babies born each day. (To set the value of this variable, you should use births_per_min and some of the variables
-from the previous code cell.)
+Use the next code cell to:
+1} Define a variable births_per_min and set it to 250 (there are on average 250 babies born each minute).
+2} Define a variable births_per_day that contains the average number of babies born each day (to set the value of this variable, you should use births_per_min and some of the variables
+from the previous code cell).
+
 Remember you can always get a hint if you need it!
 
+****************
 24
 # TODO: Set the value of the births_per_min variable
 births_per_min = 250
@@ -157,13 +157,13 @@ births_per_day = births_per_min * mins_per_hour * hours_per_day
 ****************
 
 <Question 5>
-(Questions marked with a 🌶️ will be a little bit more challenging than the others! Remember you can always get a hint or view the solution.)
+(Note: Questions marked with a hot pepper will be a little bit more challenging than the others! Remember you can always get a hint or view the solution.)
 
 The Titanic competition is Kaggle's most famous data science competition. In this competition, participants are challenged to build a machine learning model that can predict whether or
 not passengers survived the Titanic shipwreck, based on information like age, sex, family size, and ticket number.
 
 Run the next code cell without changes to load and preview the titanic data. Don't worry about the details of the code for now - the end result is just that the all of the titanic data
-has been loaded in a variable named titanic_data (in order to learn how to write this code yourself, you can take the Python course and then the Pandas course).
+has been loaded in a variable named titanic_data (in order to learn how to write this code yourself, you can take the Python course and then the pandas course).
 
 ****************
 # Load the data from the titanic competition
@@ -188,8 +188,8 @@ The next code cell defines and prints the values of three variables:
 2} survived = number of passengers who survived the shipwreck
 3} minors = number of passengers under 18 years of age
 
-Run the code cell without changes (don't worry about the details of how these variables are calculated for now. You can learn more about how to calculate these values in the Pandas
-course).
+Run the code cell without changes. Don't worry about the details of how these variables are calculated for now. You can learn more about how to calculate these values in the pandas
+course.
 
 ****************
 # Number of total passengers

@@ -1,8 +1,7 @@
-January 10th, 2024
-Basics of Kaggle
--1st Course: Introduction to Programming-
+#Basics of Kaggle: 1st Course - Introduction to Programming
 
 =======================
+Date: January 10th, 2024
 User: James Surya Putra
 =======================
 

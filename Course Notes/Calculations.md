@@ -26,7 +26,9 @@ The next code cell uses the function:
 
 
 In each case, we call the get_taxes() function and use the value that is returned to set the value of a variable.
+
 1} For ana_taxes, we calculate taxes owed by a person who earns 9,000. In this case, we call the get_taxes() function with earnings set to 9000. Thus, earnings < 12000
 is True, and tax_owed is set to .25 * 9000. Then we return the value of tax_owed.
+
 2} For bob_taxes, we calculate taxes owed by a person who earns 15,000. In this case, we call the get_taxes() function with earnings set to 15000. Thus, earnings < 12000
 is False, and tax_owed is set to .30 * 15000. Then we return the value of tax_owed.

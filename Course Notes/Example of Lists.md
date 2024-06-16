@@ -1,5 +1,5 @@
 # Example of Lists
-In the Petal to the Metal competition, your goal is to classify the species of a flower based only on its image (This is a common task in computer vision, and it is called
+In the Petal to the Metal competition, your goal is to classify the species of a flower based only on its image (this is a common task in computer vision, and it is called
 image classification).
 
 Towards this goal, say you organize the names of the flower species in the data. One way to do this is by organizing the names in a Python string:
@@ -13,8 +13,7 @@ Towards this goal, say you organize the names of the flower species in the data.
     pink primrose,hard-leaved pocket orchid,canterbury bells,sweet pea,english marigold,tiger lily,moon orchid,bird of paradise,monkshood,globe thistle
 
 
-Even better is to represent the same data in a Python list. To create a list, you need to use square brackets ([, ]) and separate each item with a comma.
-Every item in the list is a Python string, so each is enclosed in quotation marks:
+Even better is to represent the same data in a Python list. To create a list, you need to use square brackets ([, ]) and separate each item with a comma. Every item in the list is a Python string, so each is enclosed in quotation marks:
 
     flowers_list = ["pink primrose", "hard-leaved pocket orchid", "canterbury bells", "sweet pea", "english marigold", "tiger lily", "moon orchid", "bird of paradise",
     "monkshood", "globe thistle"]

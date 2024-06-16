@@ -6,6 +6,7 @@ In this next example, say you live in a country with only two tax brackets. Ever
 The function below calculates how much tax is owed:
 
 def get_taxes(earnings):
+    
     if earnings < 12000:
         tax_owed = .25 * earnings
     else:
@@ -15,10 +16,12 @@ def get_taxes(earnings):
 
 The next code cell uses the function:
 
+
 ana_taxes = get_taxes(9000)
 bob_taxes = get_taxes(15000)
 print(ana_taxes)
 print(bob_taxes)
+
 
 2250.0
 4500.0

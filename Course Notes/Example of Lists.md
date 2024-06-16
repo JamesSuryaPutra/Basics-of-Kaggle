@@ -27,6 +27,7 @@ Even better is to represent the same data in a Python list. To create a list, yo
 
 At first glance, it doesn't look too different, whether you represent the information in a Python string or list. But as you will see, there are a lot of tasks that
 you can more easily do with a list. For instance, a list will make it easier to:
+
 1} Get an item at a specified position (first, second, third, etc.)
 2} Check the number of items
 3} Add and remove items

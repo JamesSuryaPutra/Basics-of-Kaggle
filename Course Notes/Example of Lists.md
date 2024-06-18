@@ -1,4 +1,4 @@
-# Example of Lists
+# Lists
 In the Petal to the Metal competition, your goal is to classify the species of a flower based only on its image (this is a common task in computer vision, and it is called
 image classification).
 
